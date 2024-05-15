@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  foundry:
+    image: ghcr.io/foundry-rs/foundry:latest
+    working_dir: /app
+    volumes:
+     - ./:/app
+    ports:
+      - 8545:8545
+    entrypoint: /usr/local/bin/anvil
+    command: '--fork-url https://eth.merkle.io'
+
+    
