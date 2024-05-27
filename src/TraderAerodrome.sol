@@ -27,7 +27,7 @@ contract TraderAero is Ownable {
         setSwapper(_msgSender());
     }
 
-    function swapStableExactIn(
+    function swapVolatileExactIn(
         address tokenIn,
         address tokenOut,
         uint256 amountIn,
